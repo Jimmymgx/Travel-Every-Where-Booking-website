@@ -1,0 +1,54 @@
+  
+        label , i {
+            
+            color: white;
+            font-size: 25px;
+                
+        }
+
+        fieldset {
+            
+            border: 1px groove #ddd;
+            margin: 100px;
+            width: 600px;
+            background-color:gray;
+            border-color: black;
+            background-color: transparent
+        }
+
+        legend {
+            font-size: 30px;
+            font-weight: bold;
+            text-align: left;
+            color: white
+        }
+
+        label,
+        select,
+        input {
+
+            margin: 1px;
+            padding: 1px
+        }
+
+
+        img {
+
+            height: 100%;
+            width: 100px;
+            padding: 30px;
+        }
+        
+        
+        body{
+             background-image: url(pics/plane_background.jpg);
+            background-size: contain;
+        
+            background-size: auto
+        }
+
+
+        
+        
+        
+        

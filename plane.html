@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>plan</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+   <script src="https://kit.fontawesome.com/yourcode.js"></script>
+    <link rel="stylesheet" href="plane.css">
+    <!--Font awsome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- end of the Font awsome-->
+
+</head>
+
+
+
+<body>
+
+    <!-- the navbar -->
+    <nav class="navbar navbar-expand-md  navbar-dark fixed-top" style="background-color: gray; ">
+        <!-- Brand -->
+        <a href="homePage.html"><i class="fa fa-deviantart fa-2x" style="color: white;"></i></a>
+
+        <!-- Toggler/collapsibe Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navbar links -->
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="homePage.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="plane.html">Flights</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="busses.html">Busses</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="hotels.html">Hotel</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="sign%20up.html" style="margin-left:700px">Sign up</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Login.html">Log in</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+ <!-- this part using Booking -->
+
+    <form style="padding: 20px">
+        <fieldset class="booking">
+            <legend>Booking</legend>
+
+
+            <div class="btn-group col-md-12">
+                <button type="button" onclick="roundTrip()" class="btn btn-primary">Round Trip</button>
+                <button type="button" onclick="oneWay()" class="btn btn-primary">One Way</button>
+                <div class="btn-group">
+                    <a href="multi_destinition.html" class="btn btn-primary">Multi Destinition</a>
+
+                </div>
+                <a href="Top%20Destinition.html" class="btn btn-primary">Top Destinition</a>
+            </div>
+
+            <div style="padding: 20px">
+                <div class="row">
+
+                    <div class=" col-md-6">
+                        <label for="Destinition-from">From</label> <i class="fa fa-plane"></i><br>
+                        <input id="Destinition-from" type="text" name="Destinition-from">
+                    </div>
+
+                    <div class=" col-md-6">
+                        <label for="Destinition-To"> To</label> <i class="fa fa-plane"></i><br>
+                        <input id="Destinition-To" type="text" name="Destinition-To">
+                    </div>
+
+
+
+
+
+                </div>
+
+
+                <div class="row">
+
+                    <div class=" col-md-6">
+                        <label for="Departure-Date">Departure Date</label> <i class="fas fa-calendar-alt"></i><br>
+                        <input id="Departure-Date" type="Date" name="Departure-Date">
+                    </div>
+
+                    <div id="returnDate" class=" col-md-6">
+                        <label for="Return-Date">Return Date</label> <i class="fa fa-calendar-alt"></i><br>
+                        <input id="Return-Date" type="Date" name="Return-Date">
+                    </div>
+
+                </div>
+            </div>
+
+
+            <div style="padding: 20px">
+
+                <div class="row">
+                    <div class=" col-md-4">
+                        <label for="num-adult">Adult</label> <i class="fa fa-male"></i><br>
+                        <select class="form-control" id="num-adult">
+                            <option>None</option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                            <option>6</option>
+                            <option>7</option>
+
+                        </select>
+
+                    </div>
+
+                    <div class=" col-md-4">
+                        <label for="num-child"> Child</label> <i class="fa fa-child"></i><br>
+                        <select class="form-control" id="num-child">
+                            <option>None</option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+
+                        </select>
+                    </div>
+
+                    <div class=" col-md-4">
+                        <label for="num-infant">Infant</label> <i class="fas fa-baby"></i><br>
+                        <select class="form-control" id="num-infant">
+                            <option>None</option>
+                            <option>1</option>
+                        </select>
+                    </div>
+
+
+
+                </div>
+
+                <div class="row">
+
+                    <div class=" col-md-4">
+                        <label for="num-need">Special Need</label> <i class="fa fa-accessible-icon"></i><br>
+                        <select class="form-control" id="num-need">
+                            <option>None</option>
+                            <option>1</option>
+                        </select>
+                    </div>
+
+
+                    <div class=" col-md-4">
+                        <label for="num-Cargo">Cargo</label> <i class="fa fa-box"></i><br>
+                        <select class="form-control" id="num-Cargo">
+                            <option>None</option>
+                            <option>Car(s) </option>
+                            <option>biycle(s) </option>
+                        </select>
+
+                    </div>
+
+                    <div class=" col-md-4">
+                        <label for="num-Pets"> Pets</label> <i class="	fa fa-dog"></i><br>
+                        <select class="form-control" id="num-Pets">
+                            <option>None</option>
+                            <option>Cat(s) </option>
+                            <option>Dog(s)</option>
+                        </select>
+
+                    </div>
+                </div>
+
+                <div id="submit" class=" col-md-12">
+                    <br>
+                    <input style="float: right" class="btn btn-dark" type="submit" value="Book">
+
+                </div>
+
+            </div>
+        </fieldset>
+    </form>
+    
+    
+
+
+   <script>
+
+        function oneWay() {
+            document.getElementById("returnDate").style.display = "none";
+        }
+
+        function roundTrip() {
+            document.getElementById("returnDate").style.display = "block"
+        }
+    </script>
+
+
+</body></html>

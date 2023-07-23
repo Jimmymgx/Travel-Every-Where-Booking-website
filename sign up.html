@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<title>Sign up</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+            
+            
+    <!--Font awsome-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+  <link rel="stylesheet" href="sign%20up.css">
+<!-- end of the Font awsome-->
+    </head>
+    
+<body>
+   <!-- the navbar -->
+   <nav class="navbar navbar-expand-md  navbar-dark" style="background-color:gray;">
+  <!-- Brand -->
+       <a href="homePage.html"><i class="fa fa-deviantart fa-2x" style="color: white;"></i></a>
+
+  <!-- Toggler/collapsibe Button -->
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <!-- Navbar links -->
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="homePage.html">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Flights</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="busses.html">Busses</a>
+      </li>
+        <li class="nav-item">
+        <a class="nav-link" href="hotels.html">Hotel</a>
+      </li>      
+        <li class="nav-item">
+        <a class="nav-link" href="about.html">About Us</a>
+      </li>
+        <li class="nav-item">
+         <a class="nav-link" href="sign%20up.html" style="margin-left:700px">Sign up</a>
+      </li>
+        <li class="nav-item">
+        <a class="nav-link" href="Login.html">Log in</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+    
+<div class="container">  
+<div class="row justify-content-center">
+<div class="col-md-6">
+<div class="card" style="border-color:#757575;  background-color: #757575;">
+<header class="card-header">
+	<a style="background-color: orange; border-color: orange; color: white;" href="Login.html" class="float-right btn btn-outline-primary mt-1 ">Log in</a>
+	<h4 class="card-title mt-2" style="color: white">Sign up</h4>
+</header>
+<article class="card-body">
+<form>
+	<div class="form-row">
+		<div class="col form-group">
+			<label for="fnameid">First name </label>   
+		  	<input id="fnameid" type="text" class="form-control" placeholder="">
+		</div> <!-- form-group end.// -->
+		<div class="col form-group">
+			<label for="lname">Last name</label>
+		  	<input id="lname" type="text" class="form-control" placeholder=" ">
+		</div> <!-- form-group end.// -->
+	</div> <!-- form-row end.// -->
+	<div class="form-group">
+		<label for="emailid">Email address</label>
+		<input id="emailid" type="email" class="form-control" placeholder="">
+		<small class="form-text text-muted">We'll never share your email with anyone else.</small>
+	</div> <!-- form-group end.// -->
+	<div class="form-group">
+			<label class="form-check form-check-inline">
+		  <input class="form-check-input" type="radio" name="gender" value="option1">
+		  <span class="form-check-label"> Male </span>
+		</label>
+		<label class="form-check form-check-inline">
+		  <input class="form-check-input" type="radio" name="gender" value="option2">
+		  <span class="form-check-label"> Female</span>
+		</label>
+	</div> <!-- form-group end.// -->
+	<div class="form-row">
+		<div class="form-group col-md-6">
+		  <label for="cityid">City</label>
+		  <input id="cityid" type="text" class="form-control">
+		</div> <!-- form-group end.// -->
+		<div class="form-group col-md-6">
+		  <label for="inputState">Country</label>
+		  <select id="inputState" class="form-control">
+		    <option selected=""> Choose...</option>
+		      <option>England</option>
+		      <option>Russia</option>
+		      <option >United States</option>
+		      <option>Egypt</option>
+		      <option>Germany</option>
+              <option>France</option>
+		  </select>
+		</div> <!-- form-group end.// -->
+	</div> <!-- form-row.// -->
+	<div class="form-group">
+		<label for="passid">Create password</label>
+	    <input id="passid" class="form-control" type="password">
+	</div> <!-- form-group end.// -->
+    
+    
+    <div class="form-group">
+		<label for="Conpassid">Confirm password</label>
+	    <input id="Conpassid" class="form-control" type="password">
+	</div> <!-- form-group end.// -->
+    
+    <div class="form-group">
+        <button type="submit" class="btn btn-block"> Register  </button>
+    </div> <!-- form-group// -->      
+    <small  style="color: white;">By clicking the 'Sign Up' button, you confirm that you accept our <br> Terms of use and Privacy Policy.</small>                                          
+</form>
+</article> <!-- card-body end .// -->
+<div class="border-top card-body text-center" style="color: white; ">Have an account? 
+<a style="color: white" href="Login.html">Log In</a></div>
+</div> <!-- card.// -->
+</div> <!-- col.//-->
+
+</div> <!-- row.//-->
+
+
+</div> 
+<!--container end.//-->
+
+        
+    </body>
+</html>

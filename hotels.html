@@ -1,0 +1,341 @@
+<!Doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Hotels</title>
+    <link rel="stylesheet" href="hotels.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <!--Font awsome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- end of the Font awsome-->
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myDIV");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+    </script>
+
+</head>
+
+<body style="background-color:gray;">
+
+    <!-- the navbar -->
+    <nav class="navbar navbar-expand-md  navbar-dark" style="background-color: gray">
+        <!-- Brand -->
+        <a href="homePage.html"><i class="fa fa-deviantart fa-2x" style="color: white;"></i></a>
+
+        <!-- Toggler/collapsibe Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navbar links -->
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="homePage.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Flights</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="busses.html">Busses</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="hotels.html">Hotels</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="sign%20up.html" style="margin-left:700px">Sign up</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Login.html">Log in</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="row">
+        <div class="container col-md-3" id="sidebar">
+            <form>
+                <h4>Sort by</h4>
+                <hr>
+                <br>
+                <input type="radio" class="radio" value="Recommended">Recommended
+                <br>
+                <br>
+                <input type="radio" class="radio" value="Price">Price
+                <br>
+                <br>
+                <input type="radio" class="radio" value="Best Deals">Best Deals
+                <br>
+                <br>
+                <input type="radio" class="radio" value="Guest Rating">Guest Rating
+                <br>
+                <br>
+                <input type="radio" class="radio" value="Distance from downtown">Distance from downtown
+                <br>
+                <br>
+                <input type="radio" class="radio" value="Property Class">Property Class
+                <br>
+                <br>
+                <input type="radio" class="radio" value="Vacation Rentals">Vacation Rentals
+                <br>
+                <br>
+                <hr>
+                <h4>Search by property name</h4>
+                <input type="text" class="search" placeholder="Search">
+                <a class="search-btn" href="#"><i class=" fa fa-search"></i>
+                </a>
+                <hr>
+                <h4>Filter by</h4>
+                <h4>Popular Filters</h4>
+                <input type="checkbox" class="check" value="Hotel">Hotel
+                <br>
+                <br>
+                <input type="checkbox" class="check" value="Taksim">Taksim
+                <br>
+                <br>
+                <input type="checkbox" class="check" value="Breakfast included">Breakfast included
+                <br>
+                <br>
+                <input type="checkbox" class="check" value="Free airport shuttle">Free airport shuttle
+                <br>
+                <br>
+                <input type="checkbox" class="check" value="Apartment">Apartment
+                <br>
+                <br>
+                <hr>
+                <h4>Property class</h4>
+                <br>
+
+                <button class="star-btn">1<i class="fa fa-star"></i></button>
+                <button class="star-btn">2<i class="fa fa-star"></i></button>
+                <button class="star-btn">3<i class="fa fa-star"></i></button>
+                <button class="star-btn">4<i class="fa fa-star"></i></button>
+                <button class="star-btn">5<i class="fa fa-star"></i></button>
+                <br>
+                <hr>
+                <h4>Your budget</h4>
+                <br>
+                <input type="checkbox" class="check" value="Less than 75$">Less than 75$
+                <br>
+                <br>
+                <input type="checkbox" class="check" value="75$ to 125$">75$ to 125$
+                <br>
+                <br>
+                <input type="checkbox" class="check" value="125$ to 200$">125$ to 200$
+                <br>
+                <br>
+                <input type="checkbox" class="check" value="200$ to 300$">200$ to 300$
+                <br>
+                <br>
+                <input type="checkbox" class="check" value="greater than 300$">greater than 300$
+                <br>
+                <br>
+                <hr>
+                <h4>Guest rating</h4>
+                <br>
+                <input type="radio" class="radio" value="Any">Any
+                <br>
+                <br>
+                <input type="radio" class="radio" value="Wonderful 4.5+">Wonderful 4.5+
+                <br>
+                <br>
+                <input type="radio" class="radio" value="Very Good 4+">Very Good 4+
+                <br>
+                <br>
+                <input type="radio" class="radio" value="Good 3+">Good 3+
+                <br>
+                <br>
+                <hr>
+                <h4>Payment Method</h4>
+                <br>
+                <input type="checkbox" class="check" value="Free Cancelation">Free Cancelation
+                <br>
+                <br>
+                <input type="checkbox" class="check" value="Reserve now pay later">Reserve now pay later
+                <br>
+                <br>
+
+            </form>
+        </div>
+        <div class="col-md-1"></div>
+        <div class="col-md-7">
+            <section>
+                <div class="container py-2">
+                    <div class="card">
+                        <div class="row ">
+                            <div class="col-md-4">
+                                <img src="pics/Caesars%20Palace%20Hotel%20&%20Casino%202.jpg" class="hotel-images">
+                            </div>
+                            <div class="col-md-8 px-3">
+                                <div class="card-block px-3">
+                                    <h4 class="card-title">Ceasers palace hotel and casino</h4>
+                                    <p class="card-text">This luxury hotel and casino on the Las Vegas Strip features celebrity-owned restaurants, The Forum Shops, an upscale spa and 7 swimming pools. All guest rooms offer a flat-screen cable TV.
+                                    </p>
+                                    <p class="card-text">Caesars Palace rooms include an en suite bathroom with free toiletries. Room service is offered 24 hours a day.
+                                    </p>
+                                    <a href="hotelregestrationForm.html" class="btn btn-primary" style="float: right; margin-bottom: 5px;">Book now</a>
+                                    <div class="container">
+                                        <div id="accordion">
+
+                                            <a class="card-link" data-toggle="collapse" href="#collapseOne">
+                                                show more
+                                            </a>
+                                        </div>
+                                        <div id="collapseOne" class="collapse show" data-parent="#accordion">
+                                            <div class="card-body">
+                                                <hr>
+                                                <i class="fa fa-map-marker"></i>
+                                                <label>3570 Las Vegas Boulevard South, Las Vegas Strip, Las Vegas, NV 89109, USA
+                                                </label>
+                                                <hr>
+                                                <label>5</label>
+                                                <i class="fa fa-star"></i>
+                                                <label>hotel</label>
+                                                <br>
+                                                <label>Wifi</label>
+                                                <i class="fa fa-wifi"></i>
+                                                <label>provided</label><br>
+                                                <label>Tv</label>
+                                                <i class="fa fa-tv"></i><br>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <br>
+            <section>
+                <div class="container py-2">
+                    <div class="card">
+                        <div class="row ">
+                            <div class="col-md-4">
+                                <img src="pics/The%20Venetian%202.jpg" class="hotel-images">
+                            </div>
+                            <div class="col-md-8 px-3">
+                                <div class="card-block px-3">
+                                    <h4 class="card-title">The Venetian, Las vegas</h4>
+                                    <p class="card-text">This 5-star Las Vegas Strip resort features spacious suites, over 80 international restaurants, a state-of-the-art casino and a 1.2 acre pool deck. The on-site Grand Canal Shoppes offer over 80 boutique stores.
+                                    </p>
+                                    <p class="card-text">This eco-friendly resort features spacious suites with a sunken sitting area with a dining table and 2 LCD cable HDTVs. A luxurious private bathroom with over-sized soaking tub, separate glass-enclosed shower.
+                                    </p>
+                                    <a href="hotelregestrationForm.html" class="btn btn-primary" style="float: right; margin-bottom: 5px;">Book now</a>
+                                    <div class="container">
+                                        <div id="accordion">
+
+                                            <a class="card-link" data-toggle="collapse" href="#collapseOne">
+                                                show more
+                                            </a>
+                                        </div>
+                                        <div id="collapseOne" class="collapse show" data-parent="#accordion">
+                                            <div class="card-body">
+                                                <hr>
+                                                <i class="fa fa-map-marker"></i>
+                                                <label>3355 Las Vegas Boulevard South, Las Vegas Strip, Las Vegas, NV 89109, USA</label>
+                                                <hr>
+                                                <label>5</label>
+                                                <i class="fa fa-star"></i>
+                                                <label>hotel</label>
+                                                <br>
+                                                <label>Wifi</label>
+                                                <i class="fa fa-wifi"></i>
+                                                <label>provided</label><br>
+                                                <label>Tv</label>
+                                                <i class="fa fa-tv"></i><br>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <br>
+            <section>
+                <div class="container py-2">
+                    <div class="card">
+                        <div class="row ">
+                            <div class="col-md-4">
+                                <img src="pics/Caesars%20Palace%20Hotel%20&%20Casino%202.jpg" class="hotel-images">
+                            </div>
+                            <div class="col-md-8 px-3">
+                                <div class="card-block px-3">
+                                    <h4 class="card-title">Wynn, Las vegas</h4>
+                                    <p class="card-text">
+                                        This luxurious resort hotel on the Las Vegas Strip offers modern and exotic experiences with a full-service spa, oasis style pools and a variety of exclusive brand name shops. Wynn Las Vegas is less than 8 km from McCarran International Airport.
+                                    </p>
+                                    <p class="card-text">
+                                        Wynn Las Vegas features a full casino with more than 1,800 slots and 26 poker tables. A wide selection of table games is also offered, including poolside blackjack
+                                    </p>
+                                    <a href="hotelregestrationForm.html" class="btn btn-primary" style="float: right; margin-bottom: 5px;">Book now</a>
+                                    <div class="container">
+                                        <div id="accordion">
+
+                                            <a class="card-link" data-toggle="collapse" href="#collapseOne">
+                                                show more
+                                            </a>
+                                        </div>
+                                        <div id="collapseOne" class="collapse show" data-parent="#accordion">
+                                            <div class="card-body">
+                                                <hr>
+                                                <i class="fa fa-map-marker"></i>
+                                                <label>3131 Las Vegas Boulevard, Las Vegas Strip, Las Vegas, NV 89109, USA
+                                                </label>
+                                                <hr>
+                                                <label>5</label>
+                                                <i class="fa fa-star"></i>
+                                                <label>hotel</label>
+                                                <br>
+                                                <label>Wifi</label>
+                                                <i class="fa fa-wifi"></i>
+                                                <label>provided</label><br>
+                                                <label>Tv</label>
+                                                <i class="fa fa-tv"></i><br>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="col-md-1"></div>
+    </div>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myDIV");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+
+        }
+    </script>
+
+</body></html>

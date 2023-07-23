@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html style="background-image:imageurl('http://getwallpapers.com/wallpaper/full/a/5/d/544750.jpg');">
+<head>
+    <title>Login Page</title>
+    <!--Bootsrap 4 CDN-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <!--Fontawesome CDN-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+    <!--Font awsome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- end of the Font awsome-->
+
+    <!--Custom styles-->
+    <link rel="stylesheet" type="text/css" href="Login.css">
+</head>
+
+<body>
+    <!-- the navbar -->
+    <nav class="navbar navbar-expand-md  navbar-dark" style="background-color: ">
+        <!-- Brand -->
+        <a href="homePage.html"><i class="fa fa-deviantart fa-2x" style="color: white;"></i></a>
+
+        <!-- Toggler/collapsibe Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navbar links -->
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="homePage.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="plane.html">Flights</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="busses.html">Busses</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="hotels.html">Hotels</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="sign%20up.html" style="margin-left:700px">Sign up</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Login.html">Log in</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="d-flex justify-content-center h-100">
+            <div class="card">
+                <div class="card-header">
+                    <h3>Sign In</h3>
+                    <div class="d-flex justify-content-end social_icon">
+                        <a href="https://www.facebook.com/" target="_blank">
+                            <span><i class="fab fa-facebook-square"></i></span>
+                        </a>
+                        <a href="https://www.instagram.com/" target="_blank">
+                            <span><i class="fab fa-instagram"></i></span>
+                        </a>
+                        <a href="https://twitter.com/login" target="_blank">
+                            <span><i class="fab fa-twitter-square"></i></span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="card-body">
+                    <form>
+                        <div class="input-group form-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"><i class="fas fa-user"></i></span>
+                            </div>
+                            <input type="text" class="form-control" placeholder="username">
+
+                        </div>
+                        <div class="input-group form-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"><i class="fas fa-key"></i></span>
+                            </div>
+                            <input type="password" class="form-control" placeholder="password">
+                        </div>
+                        <div class="row align-items-center remember">
+                            <input type="checkbox">Remember Me
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" value="Login" class="btn float-right login_btn">
+                        </div>
+                    </form>
+                </div>
+                <div class="card-footer">
+                    <div class="d-flex justify-content-center links">
+                        Don't have an account?<a href="sign%20up.html">Sign Up</a>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <a href="#">Forgot your password?</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body></html>

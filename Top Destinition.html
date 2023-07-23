@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>plan</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <!--Font awsome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- end of the Font awsome-->
+
+
+    <style>
+        img {
+
+            height: 100%;
+            width: 100%;
+            padding: 30px;
+        }
+
+
+
+        fieldset {
+            border: 2px groove #ddd;
+            margin: 100px;
+            background-color: transparent;
+            border-color: black;
+            width: 60%;
+            border-color: black
+        }
+
+        legend {
+            font-size: 30px;
+            font-weight: bold;
+            text-align: left;
+            color: white
+        }
+
+        body {
+
+
+            background-image: url(pics/background2.jpeg);
+            background-size: auto
+        }
+    </style>
+
+
+</head>
+
+
+<html>
+
+<body>
+    <!-- the navbar -->
+    <nav class="navbar navbar-expand-md  navbar-dark fixed-top" style="background-color: gray; ">
+        <!-- Brand -->
+        <a href="homePage.html"><i class="fa fa-deviantart fa-2x" style="color: white;"></i></a>
+
+        <!-- Toggler/collapsibe Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navbar links -->
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="homePage.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="plane.html">Flights</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="busses.html">Busses</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="hotels.html">Hotel</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="sign%20up.html" style="margin-left:700px">Sign up</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Login.html">Log in</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+
+    <fieldset>
+        <legend>Top Destinition <div class="spinner-border text-primary"></div>
+        </legend>
+
+
+        <div class="btn-group col-md-12 ">
+
+            <input type="button" class="btn btn-primary" value="London" onclick="london()" class="nav-link col-md-4">
+            <input type="button" class="btn btn-primary" value="Paris" onclick="paris()" class="nav-link col-md-4">
+            <input type="button" class="btn btn-primary" value="Rome" onclick="rome()" class="nav-link col-md-4 ">
+            <a href="plane.html" class="btn btn-primary">previous</a>
+
+
+        </div>
+
+
+        <div class="row">
+
+            <div class="col-md-6">
+                <img id="pic1" class="rounded-circle" src="pics/london/london-.jpg" alt="">
+            </div>
+
+            <div class="col-md-6">
+                <img id="pic2" class="rounded-circle" src="pics/london/london-bridge-660x330.jpg" alt="">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6">
+                <img id="pic3" class="rounded-circle" src="pics/london/london-england-STAYLDN0918.jpg" alt="">
+            </div>
+            <div class="col-md-6">
+                <img id="pic4" class="rounded-circle" src="pics/london/london-eye.jpg" alt="">
+            </div>
+
+        </div>
+
+        <div class="row">
+
+            <div class="col-md-12">
+                <img id="pic5" class="rounded-Thumbnail" src="pics/london/london-travel-guide-lede.jpg" alt="">
+            </div>
+
+        </div>
+
+
+    </fieldset>
+
+    <script>
+        function paris() {
+
+
+            document.getElementById("pic1").src = "pics/paris/2bead9763909b4c16c9859c356c92f5a5bca2231bf22a7f44a2482e860b70f38.jpg";
+            document.getElementById("pic2").src = "pics/paris/Paris_AdobeStock_264549883_1.jpg";
+            document.getElementById("pic3").src = "pics/paris/paris-shutterstock-1400x500.jpg";
+            document.getElementById("pic4").src = "pics/paris/tour_img-1066736-146.jpg";
+            document.getElementById("pic5").src = "pics/paris/arco-triunfo-paris.jpg";
+
+
+        }
+
+
+        function rome() {
+
+            
+            document.getElementById("pic1").src = "pics/rome/HERO_UltimateRome_Hero_shutterstock789412159.jpg";
+            document.getElementById("pic2").src = "pics/rome/italy-rome-st-peters-vatican-city-rome.jpg";
+            document.getElementById("pic3").src = "pics/rome/roma-6-crop.jpg";
+            document.getElementById("pic4").src = "pics/rome/stock-photo-roman-sunset-77415821.jpg";
+            document.getElementById("pic5").src = "pics/rome/web3-trevi-fountain-rome-atibordee-kongprepan-cc-by-nd-2.0.jpg";
+
+
+
+        }
+
+
+
+        function london() {
+
+            document.getElementById("pic1").src = "pics/london/london-.jpg";
+            document.getElementById("pic2").src = "pics/london/london-bridge-660x330.jpg";
+            document.getElementById("pic3").src = "pics/london/london-england-STAYLDN0918.jpg";
+            document.getElementById("pic4").src = "pics/london/london-eye.jpg";
+            document.getElementById("pic5").src = "pics/london/london-travel-guide-lede.jpg";
+
+
+        }
+    </script>
+
+
+
+
+</body></html>

@@ -1,0 +1,27 @@
+body
+{
+background-image: url("pics/544750.jpg");
+  background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+font-family: 'Numans', sans-serif;
+}
+button[type=submit]{
+    background-color: #FFC312;
+    border-color: #FFC312;
+   transition: box-shadow .3s; 
+    color: white;
+}
+button:hover{
+    background-color: #FFC312;
+    border-color: #FFC312;
+    box-shadow: 0 0 11px rgba(33,33,33,1.5);
+}
+label{
+    color: white;
+}
+a
+{
+    font-size: 18px;
+}
